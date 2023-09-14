@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.storyContainer{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  gap: 1rem;
+  transition: 0.3s;
+}
+
+.storyContainer:hover{
+  transform: translateY(-0.20rem);
+  transition: 0.3s;
+}
+
+.imgTitleContainer{
+  display: flex;
+  gap: 1rem;
+}
+.titleContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.img{
+  width: 11vw;
+}
+
+.pageTitle{
+  font-size: 3rem;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.creator{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.title{
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
