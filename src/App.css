@@ -1,13 +1,13 @@
 .App {
   display: flex;
   flex-direction: column;
-  padding: 5rem;
+  padding: 2rem;
   gap: 2rem;
   justify-content: center;
   align-items: center;
 }
 
-.storyContainer{
+.storyContainer {
   display: flex;
   flex-direction: column;
   width: 60vw;
@@ -17,39 +17,53 @@
   transition: 0.3s;
 }
 
-.storyContainer:hover{
-  transform: translateY(-0.20rem);
+.storyContainer:hover {
+  transform: translateY(-0.10rem);
   transition: 0.3s;
 }
 
-.imgTitleContainer{
+.imgTitleContainer {
   display: flex;
   gap: 1rem;
 }
-.titleContainer{
+
+.titleContainer {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.img{
+.img {
   width: 11vw;
 }
 
-.pageTitle{
+.pageTitle {
   font-size: 3rem;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: 700;
-}
-
-.creator{
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
 }
 
-.title{
-  font-family:'Times New Roman', Times, serif;
+.creator {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.deleteStoryButton {
+  width: 1vw;
+  border: none;
+  background-color: rgb(255, 173, 173);
+  color: white;
+  transition: 0.3s;
+}
+
+.deleteStoryButton:hover {
+  background-color: red;
+  transition: 0.3s;
 }

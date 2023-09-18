@@ -4,12 +4,20 @@ import stories from './sample_news_stories.json'
 import placeholder from './placeholderimg.svg'
 
 function App() {
+
+  function handleDelete(event) {
+    const target = event.target;
+    const ele = target.parentElement;
+    ele.remove();
+  }
+
   return (
     <div className="App">
       <div className='pageTitle'>My News Feed</div>
       {
         stories && stories.results.slice(0, 4).map((item, index) => (
           <div className='storyContainer' key={index}>
+            <button className='deleteStoryButton' onClick={handleDelete}>X</button>
             <div className='imgTitleContainer'>
               <img className='img' src={item.image_url || placeholder}></img>
               <div className='titleContainer'>
